@@ -1,0 +1,102 @@
+﻿section > h2{
+    color: whitesmoke;
+    font-family: Arial;
+    font-weight: bold;
+    background-color: forestgreen;
+    margin:0;
+    margin-bottom: 50px;
+    border: double 2px #808080;
+    border-radius: 10px;
+    box-shadow: 5px rgb(56, 106, 45), rgb(forestgreen);
+}
+#list-about{
+    list-style: none;
+    display: flex;
+}
+#list-about > h3{
+    text-align: center;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#list-about > li {
+    transition: 1s;
+    font-family: 'Times New Roman', Times, serif;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+    #list-about > li:hover{
+        transform: scale(1.02) rotate(1deg);
+    }
+
+#about-box{
+    border-top: solid 3px green;
+    border-bottom: solid 3px green;
+}
+
+
+#about{
+    border: solid 2px green;
+    border-radius: 5px;
+}
+#about > h3{
+    color:white;
+    font-weight: bold;
+    background-color: green;
+}
+#about > p {
+    margin-top: 40px;
+}
+#about > img{
+    border-radius: 5px;
+    width: 200px;
+    height:150px;
+    object-fit: unset;
+}
+.card-title {
+    font-weight: 600;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 128, 0, 0.2);
+}
+#thanhtuu{
+    margin:0;
+    background-color:forestgreen;
+    color: white;
+    border: 2px double green; 
+}
+#thanhtuu-box{
+    padding: 0;
+    border: solid 2px green;
+}
+#quytac{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+    #quytac > li {
+        border-top: solid 2px green;
+        border-bottom: solid 2px green;
+        color: green;
+        font-weight:bold;
+        font-family:'Times New Roman';
+        font-size: 20px;
+        margin: 40px;
+        width: 200px;
+        height: 200px;
+    }

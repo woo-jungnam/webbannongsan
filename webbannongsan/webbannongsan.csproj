@@ -1,0 +1,319 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD96D36E-9045-4EB7-8D25-F38CAD207B73}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>webbannongsan</RootNamespace>
+    <AssemblyName>webbannongsan</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44356</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="allproduct.html" />
+    <Content Include="bestseller.html" />
+    <Content Include="cart.html" />
+    <Content Include="css\about.css" />
+    <Content Include="css\allproduct.css" />
+    <Content Include="css\cart.css" />
+    <Content Include="css\index.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\register.css" />
+    <Content Include="dacsanproduct.html" />
+    <Content Include="fruitproduct.html" />
+    <Content Include="image\about-1.jpg" />
+    <Content Include="image\about-2.jpg" />
+    <Content Include="image\about-image-1.jpg" />
+    <Content Include="image\about-image-2.jpg" />
+    <Content Include="image\about-image-3.jpg" />
+    <Content Include="image\about-image-4.jpg" />
+    <Content Include="image\apple.jpg" />
+    <Content Include="image\award1.jpg" />
+    <Content Include="image\award2.jpg" />
+    <Content Include="image\award3.jpg" />
+    <Content Include="image\backgroundlogin.jpg" />
+    <Content Include="image\banana.jpg" />
+    <Content Include="image\banner-2.jpg" />
+    <Content Include="image\banner-4.jpg" />
+    <Content Include="image\baoquan.jpg" />
+    <Content Include="image\bapnon.jpg" />
+    <Content Include="image\bau.jpg" />
+    <Content Include="image\bellbepper.jpg" />
+    <Content Include="image\bido.jpg" />
+    <Content Include="image\broccoli.jpg" />
+    <Content Include="image\buoi.jpg" />
+    <Content Include="image\ca-tim.jpg" />
+    <Content Include="image\cabbage.jpg" />
+    <Content Include="image\caingong.jpg" />
+    <Content Include="image\caithia.jpg" />
+    <Content Include="image\cam.jpg" />
+    <Content Include="image\camvang.jpg" />
+    <Content Include="image\carot.jpg" />
+    <Content Include="image\carrot.jpg" />
+    <Content Include="image\catim.jpg" />
+    <Content Include="image\chanhday.jpg" />
+    <Content Include="image\chomchom.jpg" />
+    <Content Include="image\chuoi.jpg" />
+    <Content Include="image\contact-banner.png" />
+    <Content Include="image\cucumber.jpg" />
+    <Content Include="image\cudau.jpg" />
+    <Content Include="image\danhmucbanchay.jpg" />
+    <Content Include="image\danhmucdacsan.jpg" />
+    <Content Include="image\danhmuctatca.jpg" />
+    <Content Include="image\danhmuctheomua.jpg" />
+    <Content Include="image\daubap.jpg" />
+    <Content Include="image\detail-about-banner-1.jpg" />
+    <Content Include="image\detail-about-banner-2.jpg" />
+    <Content Include="image\detail-about-banner-3.jpg" />
+    <Content Include="image\dragonfruit.jpg" />
+    <Content Include="image\dua-hau.jpg" />
+    <Content Include="image\duahau.jpg" />
+    <Content Include="image\dualuoi.jpg" />
+    <Content Include="image\duaxiem.jpg" />
+    <Content Include="image\grape.jpg" />
+    <Content Include="image\hanhla.jpg" />
+    <Content Include="image\khoaimon.jpg" />
+    <Content Include="image\khoaitay.jpg" />
+    <Content Include="image\kiwi.jpg" />
+    <Content Include="image\logo.jpg" />
+    <Content Include="image\man.jpg" />
+    <Content Include="image\mangcau.jpg" />
+    <Content Include="image\mangcut.jpg" />
+    <Content Include="image\mango.jpg" />
+    <Content Include="image\mangtuoi.jpg" />
+    <Content Include="image\mantamhoa.jpg" />
+    <Content Include="image\methai.jpg" />
+    <Content Include="image\mit.jpg" />
+    <Content Include="image\muop.jpg" />
+    <Content Include="image\na.jpg" />
+    <Content Include="image\nhanlong.jpg" />
+    <Content Include="image\nông trại.jpg" />
+    <Content Include="image\oi.jpeg" />
+    <Content Include="image\oi.jpg" />
+    <Content Include="image\onion.jpg" />
+    <Content Include="image\orange.jpg" />
+    <Content Include="image\papaya.jpg" />
+    <Content Include="image\pear.jpg" />
+    <Content Include="image\raudang.jpg" />
+    <Content Include="image\rauden.jpg" />
+    <Content Include="image\rauma.jpg" />
+    <Content Include="image\raurung.jpg" />
+    <Content Include="image\saurieng.jpg" />
+    <Content Include="image\susu.jpg" />
+    <Content Include="image\thanhlong.jpg" />
+    <Content Include="image\tin-1.jpg" />
+    <Content Include="image\tin-2.jpg" />
+    <Content Include="image\tin-3.jpg" />
+    <Content Include="image\pineapple.jpg" />
+    <Content Include="image\potato.jpg" />
+    <Content Include="image\rau-cu-tuoi.jpg" />
+    <Content Include="image\raubina.jpg" />
+    <Content Include="image\raumuong.jpg" />
+    <Content Include="image\strawberry.jpg" />
+    <Content Include="image\suhao.jpg" />
+    <Content Include="image\tao.jpg" />
+    <Content Include="image\cachua.jpg" />
+    <Content Include="image\taodo.jpg" />
+    <Content Include="image\tintuc1.jpg" />
+    <Content Include="image\tintuc2.jpg" />
+    <Content Include="image\tintuc3.jpg" />
+    <Content Include="image\tintuc4.jpg" />
+    <Content Include="image\toi.jpg" />
+    <Content Include="image\tomato.jpg" />
+    <Content Include="image\trai-cay-khac.jpg" />
+    <Content Include="image\Trai-cay.jpg" />
+    <Content Include="image\vai.jpg" />
+    <Content Include="image\vai.png" />
+    <Content Include="image\vitamin.jpg" />
+    <Content Include="image\votraicay.jpg" />
+    <Content Include="image\watermelon.jpg" />
+    <Content Include="image\xalach.jpg" />
+    <Content Include="image\xoai.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\about.js" />
+    <Content Include="js\allproduct.js" />
+    <Content Include="js\bestsller.js" />
+    <Content Include="js\cart.js" />
+    <Content Include="js\dacsan.js" />
+    <Content Include="js\fruit.js" />
+    <Content Include="js\index.js" />
+    <Content Include="js\profile.js" />
+    <Content Include="js\sanphamtheomua.js" />
+    <Content Include="js\vegetable.js" />
+    <Content Include="login.html" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-grid.css" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-grid.min.css" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-grid.rtl.css" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-reboot.css" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-reboot.min.css" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-reboot.rtl.css" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-utilities.css" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-utilities.min.css" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-utilities.rtl.css" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap.css" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap.rtl.css" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap.rtl.min.css" />
+    <Content Include="bootstrap-5.0.2-dist\js\bootstrap.bundle.js" />
+    <Content Include="bootstrap-5.0.2-dist\js\bootstrap.bundle.min.js" />
+    <Content Include="bootstrap-5.0.2-dist\js\bootstrap.esm.js" />
+    <Content Include="bootstrap-5.0.2-dist\js\bootstrap.esm.min.js" />
+    <Content Include="bootstrap-5.0.2-dist\js\bootstrap.js" />
+    <Content Include="bootstrap-5.0.2-dist\js\bootstrap.min.js" />
+    <Content Include="css\style.css" />
+    <Content Include="Global.asax" />
+    <Content Include="image\banner-1.jpg" />
+    <Content Include="image\banner-2.png" />
+    <Content Include="image\banner-3.jpg" />
+    <Content Include="js\login.js" />
+    <Content Include="js\register.js" />
+    <Content Include="js\script.js" />
+    <Content Include="product-detail.html" />
+    <Content Include="profile.html" />
+    <Content Include="register.html" />
+    <Content Include="theomuaproduct.html" />
+    <Content Include="vegetableproduct.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-grid.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-reboot.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-utilities.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-utilities.min.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap.min.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap.rtl.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\css\bootstrap.rtl.min.css.map" />
+    <Content Include="bootstrap-5.0.2-dist\js\bootstrap.bundle.js.map" />
+    <Content Include="bootstrap-5.0.2-dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="bootstrap-5.0.2-dist\js\bootstrap.esm.js.map" />
+    <Content Include="bootstrap-5.0.2-dist\js\bootstrap.esm.min.js.map" />
+    <Content Include="bootstrap-5.0.2-dist\js\bootstrap.js.map" />
+    <Content Include="bootstrap-5.0.2-dist\js\bootstrap.min.js.map" />
+    <Content Include="image\about-3.jpg" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52258</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44356/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

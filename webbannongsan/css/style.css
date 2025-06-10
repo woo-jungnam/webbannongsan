@@ -1,0 +1,126 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9f9;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #2c7a2c !important;
+}
+
+.carousel-item img {
+    border-radius: 10px;
+    height: 400px;
+    object-fit: cover;
+}
+
+h2 {
+    color: #2c7a2c;
+}
+
+.card {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background-color: #2c7a2c;
+    border: none;
+}
+
+    .btn-primary:hover {
+        background-color: #1f4d1f;
+    }
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+    .btn-success:hover {
+        background-color: #196c19;
+    }
+
+.list-group-item img {
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.list-group-item h3 {
+    color: forestgreen;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#listdanhmuc > li > a{
+    padding:0;
+    border-color: wheat;
+    border-radius: 7px;
+    background-color: greenyellow;
+    text-decoration:none;
+    color:white;
+}
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+
+    input[type="number"]:focus {
+        border-color: #2E8B57;
+        box-shadow: 0 0 5px rgba(46, 139, 87, 0.6);
+    }
+
+
+
+.footer-modern {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.footer-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #c8facc;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+    .footer-link:hover {
+        color: #a5d6a7;
+        text-decoration: underline;
+    }
+
+.footer-modern .copyright-area {
+    background-color: #1b5e20;
+    font-size: 0.9rem;
+}
+
+    header{
+    font-family: 'Times New Roman';
+    margin-bottom: 20px;
+}
+
+header > nav > div {
+    font-size: 20px;
+}
+
+.footer-modern {
+    background-color: #2e7d32;
+    color: white;
+}

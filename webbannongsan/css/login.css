@@ -1,0 +1,176 @@
+﻿body {
+  height: 100vh;
+  width: 100%;
+  background-color: hsla(200,40%,30%,.4);
+  background-image:   
+    url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+    url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+    url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+    url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+    url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+  background-repeat: repeat-x;
+  background-position: 
+    0 20%,
+    0 100%,
+    0 50%,
+    0 100%,
+    0 0;
+  background-size: 
+    2500px,
+    800px,
+    500px 200px,
+    1000px,
+    400px 260px;
+  animation: 50s para infinite linear;
+  }
+
+@keyframes para {
+  100% {
+    background-position: 
+      -5000px 20%,
+      -800px 95%,
+      500px 50%,
+      1000px 100%,
+      400px 0;
+    }
+  }
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    body > * {
+        position: relative;
+        z-index: 1;
+    }
+
+#background {
+    border: 2px solid green;
+    border-radius: 10px;
+    background: rgba(144, 238, 144, 0.4);
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0) !important;
+    backdrop-filter: blur(6px);
+}
+    .navbar .nav-link {
+        transition: all 0.3s ease;
+        position: relative;
+        color: #2c3e50;
+    }
+
+        .navbar .nav-link:hover {
+            color: #28a745;
+        }
+
+        .navbar .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #28a745;
+            transition: 0.3s ease-in-out;
+        }
+
+        .navbar .nav-link:hover::after {
+            width: 100%;
+        }
+
+input.form-control {
+    font-weight:bold;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #28a745;
+}
+    input.form-control:focus {
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: black;
+        opacity: 1;
+    }
+
+.form-label {
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+section.container a {
+    text-decoration:none;
+    color: #006400;
+    transition: color 0.3s ease, text-decoration 0.3s;
+}
+
+    section.container a:hover {
+        color: #228B22;
+        text-decoration: none;
+    }
+
+#background > p{
+    text-align: center;
+}
+
+#loginbtn {
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 30px;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+    #loginbtn:hover {
+        background: #fff;
+        color: #1AAB8A;
+    }
+
+    #loginbtn:before, #loginbtn:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 2px;
+        width: 0;
+        background: #1AAB8A;
+        transition: 400ms ease all;
+    }
+
+    #loginbtn:after {
+        right: inherit;
+        top: inherit;
+        left: 0;
+        bottom: 0;
+    }
+
+    #loginbtn:hover:before, #loginbtn:hover:after {
+        width: 100%;
+        transition: 800ms ease all;
+    }
+.input-icon-wrapper {
+    position: relative;
+}
+
+    .input-icon-wrapper input {
+        padding-right: 35px;
+    }
+
+    .input-icon-wrapper i {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        color: #28a745;
+        pointer-events: none;
+    }

@@ -1,0 +1,57 @@
+﻿/* Trang trí cho các card trong giỏ hàng */
+#cartItems .card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+    #cartItems .card:hover {
+        transform: scale(1.02);
+    }
+
+/* Bố cục và màu sắc cho phần nội dung giỏ hàng */
+#cartItems .card-body {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+#cartItems h5.card-title {
+    font-weight: bold;
+    color: #198754; /* Màu xanh lá chủ đạo */
+}
+
+#cartItems .card-text {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Tùy chỉnh hình ảnh sản phẩm trong giỏ */
+#cartItems img {
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Tùy chỉnh tiêu đề giỏ hàng */
+main h2 {
+    color: #198754;
+    font-weight: bold;
+    border-bottom: 2px solid #198754;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    #cartItems .card-body {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #cartItems img {
+        margin-top: 10px;
+        width: 100px;
+        height: auto;
+    }
+}

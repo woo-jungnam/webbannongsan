@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi Tiết Sản Phẩm</title>
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="image/logo.jpg" alt="Logo" width="40" height="40" class="me-2">
+                    <span class="fw-bold text-white">Nông Sản Xanh</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-white" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item text-success"><a href="index.html" class="nav-link active">Trang chủ</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="allproduct.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sản phẩm
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="fruitproduct.html">Trái cây</a></li>
+                                <li><a class="dropdown-item" href="vegetableproduct.html">Rau củ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">Giới thiệu</a></li>
+                        <li class="nav-item"><a href="cart.html" class="nav-link">Giỏ hàng</a></li>
+                        <li class="nav-item"><a href="login.html" class="nav-link" id="navLogin">Đăng nhập</a></li>
+                        <li class="nav-item"><a href="profile.html" class="nav-link d-none" id="navUser"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="productDetail" class="container mt-4"></div>
+    </main>
+
+    <footer class="footer-modern text-white mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <!-- Thông tin liên hệ -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="footer-title">Trang trại nông sản</h5>
+                    <p>
+                        Địa chỉ: 140 Đường Lê Trọng Tấn, Quận Tân Phú, TP.HCM<br>
+                        Email: <a href="mailto:hotro@nongsanxanh.vn" class="footer-link">hotro@nongsanxanh.vn</a><br>
+                        Điện thoại: 0123 456 789
+                    </p>
+                </div>
+
+                <!-- Liên kết nhanh -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="footer-title">Liên kết</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="index.html" class="footer-link">Trang chủ</a></li>
+                        <li><a href="products.html" class="footer-link">Sản phẩm</a></li>
+                        <li><a href="about.html" class="footer-link">Giới thiệu</a></li>
+                        <li><a href="cart.html" class="footer-link">Giỏ hàng</a></li>
+                    </ul>
+                </div>
+
+                <!-- Mạng xã hội -->
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="footer-title">Kết nối với chúng tôi</h5>
+                    <a href="#" class="footer-link"><i class="bi bi-facebook"></i> Facebook</a><br>
+                    <a href="#" class="footer-link"><i class="bi bi-instagram"></i> Instagram</a><br>
+                    <a href="#" class="footer-link"><i class="bi bi-twitter"></i> Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 copyright-area">
+            © 2025 Nông Sản Xanh. All rights reserved.
+        </div>
+    </footer>
+    <script>
+        const products = [
+            { id: 1, name: "Táo Đỏ", price: 20000, image: "/image/taodo.jpg", category: "Trái cây" },
+            { id: 2, name: "Cam Vàng", price: 25000, image: "/image/camvang.jpg", category: "Trái cây" },
+            { id: 3, name: "Xoài Cát", price: 30000, image: "/image/xoai.jpg", category: "Trái cây" },
+            { id: 4, name: "Chuối Tiêu", price: 18000, image: "/image/chuoi.jpg", category: "Trái cây" },
+            { id: 5, name: "Dưa Hấu", price: 22000, image: "/image/duahau.jpg", category: "Trái cây" },
+            { id: 6, name: "Ổi Xá Lỵ", price: 17000, image: "/image/oi.jpg", category: "Trái cây" },
+            { id: 7, name: "Mận Hậu", price: 26000, image: "/image/man.jpg", category: "Trái cây" },
+            { id: 8, name: "Vải Thiều", price: 28000, image: "/image/vai.jpg", category: "Trái cây" },
+
+            { id: 9, name: "Cà Rốt", price: 15000, image: "/image/carot.jpg", category: "Rau củ" },
+            { id: 10, name: "Cải Thìa", price: 12000, image: "/image/caithia.jpg", category: "Rau củ" },
+            { id: 11, name: "Khoai Tây", price: 18000, image: "/image/khoaitay.jpg", category: "Rau củ" },
+            { id: 12, name: "Hành Lá", price: 10000, image: "/image/hanhla.jpg", category: "Rau củ" },
+            { id: 13, name: "Cà Chua", price: 14000, image: "/image/cachua.jpg", category: "Rau củ" },
+            { id: 14, name: "Bí Đỏ", price: 16000, image: "/image/bido.jpg", category: "Rau củ" },
+            { id: 15, name: "Rau Muống", price: 9000, image: "/image/raumuong.jpg", category: "Rau củ" },
+            { id: 16, name: "Su Hào", price: 13000, image: "/image/suhao.jpg", category: "Rau củ" },
+
+            { id: 17, name: "Sầu riêng Ri6", price: 90000, image: "/image/saurieng.jpg", category: "Trái cây" },
+            { id: 18, name: "Măng cụt Lái Thiêu", price: 60000, image: "/image/mangcut.jpg", category: "Trái cây" },
+            { id: 19, name: "Bưởi Năm Roi", price: 50000, image: "/image/buoi.jpg", category: "Trái cây" },
+            { id: 20, name: "Thanh long Bình Thuận", price: 35000, image: "/image/thanhlong.jpg", category: "Trái cây" },
+            { id: 21, name: "Chôm chôm Long Khánh", price: 40000, image: "/image/chomchom.jpg", category: "Trái cây" },
+            { id: 22, name: "Na Đông Triều", price: 45000, image: "/image/na.jpg", category: "Trái cây" },
+            { id: 23, name: "Mít Thái Cái Bè", price: 38000, image: "/image/mit.jpg", category: "Trái cây" },
+            { id: 24, name: "Cam Cao Phong", price: 55000, image: "/image/cam.jpg", category: "Trái cây" },
+
+            { id: 25, name: "Rau đắng đất Miền Tây", price: 20000, image: "/image/raudang.jpg", category: "Rau củ" },
+            { id: 26, name: "Cải ngồng Hà Giang", price: 18000, image: "/image/caingong.jpg", category: "Rau củ" },
+            { id: 27, name: "Rau rừng Tây Nguyên", price: 22000, image: "/image/raurung.jpg", category: "Rau củ" },
+            { id: 28, name: "Bắp non Đồng Tháp", price: 25000, image: "/image/bapnon.jpg", category: "Rau củ" },
+            { id: 29, name: "Măng tươi Bắc Kạn", price: 30000, image: "/image/mangtuoi.jpg", category: "Rau củ" },
+            { id: 30, name: "Su su Tam Đảo", price: 16000, image: "/image/susu.jpg", category: "Rau củ" },
+            { id: 31, name: "Rau dền đỏ", price: 12000, image: "/image/rauden.jpg", category: "Rau củ" },
+            { id: 32, name: "Khoai môn Lệ Thủy", price: 28000, image: "/image/khoaimon.jpg", category: "Rau củ" },
+
+            { id: 33, name: "Me Thái", price: 32000, image: "/image/methai.jpg", category: "Trái cây" },
+            { id: 34, name: "Dưa Lưới Đồng Nai", price: 45000, image: "/image/dualuoi.jpg", category: "Trái cây" },
+            { id: 35, name: "Chanh Dây", price: 27000, image: "/image/chanhday.jpg", category: "Trái cây" },
+            { id: 36, name: "Dừa Xiêm Bến Tre", price: 30000, image: "/image/duaxiem.jpg", category: "Trái cây" },
+            { id: 37, name: "Nhãn Lồng Hưng Yên", price: 55000, image: "/image/nhanlong.jpg", category: "Trái cây" },
+            { id: 38, name: "Mận Tam Hoa Bắc Hà", price: 48000, image: "/image/mantamhoa.jpg", category: "Trái cây" },
+
+            { id: 39, name: "Rau Má Quảng Ngãi", price: 15000, image: "/image/rauma.jpg", category: "Rau củ" },
+            { id: 40, name: "Bầu Hồ Lô", price: 17000, image: "/image/bau.jpg", category: "Rau củ" },
+            { id: 41, name: "Cà Tím Trứng", price: 16000, image: "/image/catim.jpg", category: "Rau củ" },
+            { id: 42, name: "Đậu Bắp", price: 14000, image: "/image/daubap.jpg", category: "Rau củ" },
+            { id: 43, name: "Mướp Hương", price: 15000, image: "/image/muop.jpg", category: "Rau củ" },
+            { id: 44, name: "Củ Đậu Hải Dương", price: 13000, image: "/image/cudau.jpg", category: "Rau củ" }
+        ];
+
+        function getProductById(id) {
+            return products.find(p => p.id === id);
+        }
+
+        function renderProductDetail(product) {
+            const container = document.getElementById("productDetail");
+            if (!product) {
+                container.innerHTML = "<p>Không tìm thấy sản phẩm.</p>";
+                return;
+            }
+
+            container.innerHTML = `
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="${product.image}" alt="${product.name}" class="img-fluid" />
+                            </div>
+                            <div class="col-md-7">
+                                <h2>${product.name}</h2>
+                                <p>Giá: ${product.price.toLocaleString()} VND</p>
+                                <p>Danh mục: ${product.category}</p>
+                                
+                                </br>
+                                <label>Nhập số lượng (kg): </label>
+                                <input type="number" id="detail-quantity" value="1" min="1" class="form-control w-25 mt-2" />
+
+                                <button class="btn btn-success" onclick="addToCart(${product.id}, 'detail-quantity')">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    `;
+        }
+
+        function getParam(key) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(key);
+        }
+
+        window.addEventListener("DOMContentLoaded", () => {
+            const id = parseInt(getParam("id"));
+            const product = getProductById(id);
+            renderProductDetail(product);
+        });
+
+        function addToCart(productId, inputId) {
+            const quantityInput = document.getElementById(inputId);
+            const quantity = parseInt(quantityInput.value);
+            if (isNaN(quantity) || quantity < 1) {
+                alert("Vui lòng nhập số lượng hợp lệ.");
+                return;
+            }
+
+            const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+            if (!currentUser || !currentUser.email) {
+                alert("Vui lòng đăng nhập trước khi thêm vào giỏ hàng.");
+                return;
+            }
+
+            const cartKey = `${currentUser.email}`;
+            let cart = JSON.parse(localStorage.getItem(cartKey)) || [];
+
+            const index = cart.findIndex(item => item.id === productId);
+            if (index >= 0) {
+                cart[index].quantity += quantity;
+            } else {
+                cart.push({ id: productId, quantity: quantity });
+            }
+
+            localStorage.setItem(cartKey, JSON.stringify(cart));
+            alert("Đã thêm vào giỏ hàng!");
+        }
+    </script>
+</body>
+</html>
